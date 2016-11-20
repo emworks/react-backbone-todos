@@ -5,7 +5,7 @@
 * Edit a task
 * Mark a task as completed
 * Remove a task
-* Persist tasks between working sessions (it could be LocalStorage)
+* Persist tasks between working sessions using localStorage
 
 ## Running
 
