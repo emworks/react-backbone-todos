@@ -32,8 +32,10 @@ var app = app || {};
 			return this.length ? this.last().get('order') + 1 : 1;
 		},
 
-		// Todos are sorted by their original insertion order.
-		comparator: 'order'
+		// Todos are sorted by title in reverse alphabetical order.
+		comparator: function(a, b) {
+			return -a.get('title').localeCompare(b.get('title'));
+		}
 	});
 
 	// Create our global collection of **Todos**.
